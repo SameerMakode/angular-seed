@@ -1,0 +1,14 @@
+            <div>
+                 <input type="button" (click)="toggleAction()" value="{{showAction ? 'hide Action' : 'show Action'}}"/>
+            </div>
+            <div class="div-bg"  >
+                <input type="button" (click)="clicked()" value="Change Value"/>
+            </div>
+            <div class="div-bg">
+                Value :: {{tempValue}}
+            </div>
+            <div *ngIf="showAction">
+                <input type="text" [(ngModel)]="tempValue"/>
+            </div>
+
+            

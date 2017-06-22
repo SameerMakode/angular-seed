@@ -1,0 +1,26 @@
+
+<div class="form-bg">
+    {{tempValue}}<br/><br/>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <label for="name">Name:</label>
+        </div>
+        <div class="col-xs-6">
+            <input class="form-control" type="text" id="nameInput" placeholder="name" ngControl="Name"><br/>
+        </div>
+        <div class="col-xs-6">
+            <label for="password">Password:</label>
+        </div>
+        <div class="col-xs-6">
+            <input class="form-control" type="password" id="passwordInput" placeholder="password" ngControl="Password"><br/>
+        </div>
+        <div style="text-align:right;margin-right:15px;">
+            <input type="button" value="Validate" (click)="validateInput()"/>
+        </div>
+    </div>
+
+</div>
+            
+
+            

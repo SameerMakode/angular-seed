@@ -1,0 +1,17 @@
+<h2>Courses</h2>
+        {{title}}
+        <input type="text" autoGrow/>
+        <p myHighlight>random tag</p>
+        <ul>
+            <li *ngFor="#course of courses">
+                {{course}}
+            </li>
+        </ul>
+        <h3>--------- test pipes---------</h3>
+        <p>{{nameVal | formatName}}</p>
+        <p>{{birthday | date }}</p>
+        <p>{{birthday | date:"MM/dd/yy"}}</p>
+        <p>{{birthday | date | uppercase}}</p>
+        <p>{{birthday | date:format | lowercase }}</p>
+        <button (click)="toggleFormat()">Toggle Format</button>
+        <h3>------------------------------</h3>
